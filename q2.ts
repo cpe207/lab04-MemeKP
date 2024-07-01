@@ -1,7 +1,12 @@
 function arrayStringify(a) {
-  /* Your code here */
+  let list = '';
+  for (let i = 0; i < a.length; i++) {
+    if (typeof a[i] === "number") {
+      a[i] = a[i].toString();
+      list = list + a[i];
+    }
+  } return list;
 }
-
 const c1 = [1, 2, 3];
 const c2 = [10, 9, 8, 7, 6, 5];
 const c3 = [];
